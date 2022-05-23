@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+:root{
+    --bg-color:#ff015b;
+    --bg2-color:#61fffe;
+    --main-bg:#03041e;
+    }
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background: var(--main-bg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+body .circal-one{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    top: 20px;
+    right: 5%;
+    opacity: .4;
+}
+body .circal-two{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    bottom: 20px;
+    left: 5%;
+    opacity: .4;
+}
+
+header{
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    background: var(--main-bg);
+    margin: 0 auto;
+    top: 10vh;
+    left: 10%;
+    box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 87%);
+    padding: 0 3%;
+}
+header .circal_three{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    background: var(--bg-color);
+    top: 0;
+    left: 30%;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    opacity: 0.3;
+}
+header .main_div{
+    width: 100%;
+    height: 100%;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+header nav .logo h1{
+   color: var(--bg-color);
+   font-size: 40px;
+}
+header nav .logo h1 span{
+   color:var(--bg2-color);
+}
+header nav .menu li{
+    display: inline-block;
+    margin-right: 30px;
+    border: none;
+}
+header nav .menu li a{
+   font-size: 20px;
+   letter-spacing: 2px;
+   color: white;
+}
+header nav .menu li:hover a{
+    color: var(--bg2-color);
+}
+header nav .menu li:last-child{
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    border-radius: 50px;
+    border: 2px solid var(--bg-color);
+    padding: 10px 0;
+    margin: 20px 10px 0 0;
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    transition: background 0.5s ;
+}
+header nav .menu li:last-child:hover{
+   background: var(--bg-color);
+   color: var(--main-bg) !important;
+}
+/* bottom */
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+/* left */
+section .left{
+    display: block;
+    color:white;
+}
+section .left strong{
+     font-size: 20px;
+}
+section .left h2{
+     font-size: 50px;
+     margin: 20px 0 10px 0;
+     color: var(--bg-color);
+}
+section .left p{
+     font-size: 20px;
+     text-transform: capitalize;
+}
+section .left p span{
+    color: var(--bg-color);
+}
+section .left>span{
+     font-size: 18px;
+     margin: 20px 0;
+     display: block;
+     text-transform: capitalize;
+}
+section .contact i{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+section .contact i:hover{
+   color: var(--bg-color);
+}
+section .left>a{
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    border-radius: 50px;
+    border: 2px solid var(--bg-color);
+    padding: 10px 0;
+    margin: 20px 10px 0 0;
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    transition: background 0.5s ;
+}
+section .left>a.btn_one{
+    background: var(--bg-color);
+}
+section .left>a.btn_one:hover{
+    background:none;
+}
+section .left>a.btn_two:hover{
+ 
+    background: var(--bg-color);
+}
+/* right */
+section .right{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+section .right .circal{
+    position:absolute;
+    width:350px;
+    height: 350px;
+    border-radius: 50%;
+    top: 10px;
+    background: var(--bg-color);
+    box-shadow:0 1px 4px 0 rgb(0 0 0 / 37%);
+    opacity: 0.3;
+    transition: opacity 0.5s;
+}
+section .right:hover .circal{
+   opacity: 0.5;
+}
+section .right img{
+    position: relative;
+    width: 100%;
+}
